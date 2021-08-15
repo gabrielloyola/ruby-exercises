@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def palindrome(str)
-  return 'Argument \'str\' isn\'t a string' unless str.is_a?(String)
+  raise ArgumentError, '\'str\' is not a string' unless cpf.is_a?(String)
 
   str = str.scan(/([a-zA-Z]+)/).flatten.join.downcase
 
